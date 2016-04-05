@@ -1,3 +1,6 @@
+//nowTime.getTime()获取当前距离1079年1月1日0点0分0秒的毫秒数
+//endTime.getTime()获取截止时间距离1079年1月1日0点0分0秒的毫秒数
+//将它们相差的毫秒数转化成小时，分钟，秒，即可完成倒计时
 var screenW = 1680;
 var screenH = 726;
 var endTime = new Date(2016,3,5,17,30,0);
