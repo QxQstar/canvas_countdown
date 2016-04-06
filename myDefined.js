@@ -3,7 +3,7 @@
 //将它们相差的毫秒数转化成小时，分钟，秒，即可完成倒计时
 var screenW = 1680;
 var screenH = 726;
-var endTime = new Date(2016,3,5,17,30,0);
+var endTime = new Date(2016,3,5,17,33,0);
 function addLoadEvent(func){
 	var oldload = window.onload;
 	if(typeof oldload != 'function'){
@@ -22,7 +22,14 @@ function myCanvas(){
 	canvas.height = screenH;
 	setInterval(function(){
 		var mistiming = getMistiming();
+		if(mistiming!=0){
 		render(context,mistiming);
+	 }
+	//else{
+	// 	cont.font = '20px impact';
+	// 	cont.textBaseline = 'top';
+	// 	cont.fillStyle = 'red';
+	// 	cont.fillText('时间到',100,100);}
 	},1000);
 	
 }
